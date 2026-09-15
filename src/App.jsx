@@ -12,7 +12,7 @@ export default function App() {
   // Get the client ID from the URL
   const clientId =
     new URLSearchParams(window.location.search).get('client') ||
-    'spicekitchen'
+    'BussinessName'
 
   // Find that client's configuration
   const businessConfig = clients[clientId] || clients.spicekitchen
