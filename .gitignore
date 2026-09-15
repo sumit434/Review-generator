@@ -1,0 +1,21 @@
+@"
+# Dependencies
+node_modules
+
+# Production build output
+dist
+dist-ssr
+
+# Local environment & secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Editor & System files
+.vscode
+.idea
+.DS_Store
+Thumbs.db
+"@ | Out-File -FilePath .gitignore -Encoding utf8

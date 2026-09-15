@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Single configurable accent — swap these three to re-brand the whole app. */
+  --accent: #0f9d74;
+  --accent-soft: #e6f4ef;
+  --accent-ink: #0b7a58;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #181715;
+  background: #f6f5f2;
+  min-height: 100dvh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Prevent iOS auto-zoom on focus: inputs must render at 16px+ */
+input,
+textarea {
+  font-size: 16px;
+}
+
+/* Visible, deliberate focus ring everywhere, keyboard or touch */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 8px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
